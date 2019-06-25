@@ -4,9 +4,9 @@
 	<link rel="stylesheet" type="text/css" href="debugging_jquery.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function(){
+		$(document).ready(function(){ //added the ready(function)
 
-			$('p, h3, li').hover(function(){
+			$('p, h3, li').hover(function(){ //hoverfunction to hover(function){
 				$(this).css('color', 'white');
 					}, function() {
 				$(this).css('color', 'black');
@@ -21,14 +21,14 @@
 			});
 
 			$('h5').click(function(){
-				$('img').slideDown();
+				$('img').slideDown(); // changed .slide Down to slideDown();
 			});
 
 			$('button').click(function(){
-				var result = $('input:checked').val()  
+				var result = $('input:checked').val()  // changed .value() to .val()
 				alert("Thank you for your input, we like " + result + " too!");
 			});	
-		});	
+		});	// added closing brackets to jQuery (document).ready function
 	</script>
 </head>
 <body>
